@@ -1,0 +1,20 @@
+{
+  "app": {
+    "js": [
+
+    ],
+    "css": [
+
+    ]
+  },
+  "libs": {
+    "js": [
+      "bower_components/jquery/dist/jquery.min.js",
+      "bower_components/lodash/lodash.min.js"
+
+    ],
+    "css": [
+      "bower_components/video.js/dist/video-js.min.css"
+    ]
+  }
+}

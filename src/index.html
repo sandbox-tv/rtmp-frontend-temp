@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Index</title>
+  <link href="../dist/libs.css" rel="stylesheet">
+  <link href="../dist/app.css" rel="stylesheet">
+
+  <script src="../bower_components/video.js/dist/video.min.js"></script>
+</head>
+<body>
+  <div id="app">
+    <video id=example-video width=600 height=300 class="video-js vjs-default-skin" controls>
+  <source
+     src="rtmp://192.168.59.103:1935/480/test" type="rtmp/flv">
+</video>
+  </div>
+
+  <script src="../dist/app.js"></script>
+  <script>
+  var player = videojs('example-video', { /* Options */ }, function() {
+  console.log('Good to go!');
+
+  this.play(); // if you don't trust autoplay for some reason
+
+  // How about an event listener?
+  this.on('ended', function() {
+    console.log('awww...over so soon?');
+  });
+});
+
+</script>
+</body>
+</html>
