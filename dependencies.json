@@ -10,7 +10,9 @@
   "libs": {
     "js": [
       "bower_components/jquery/dist/jquery.min.js",
-      "bower_components/lodash/lodash.min.js"
+      "bower_components/lodash/lodash.min.js",
+      "bower_components/video.js/dist/video.min.js",
+      "lib/jquery-flash-webcam/jquery.flashwebcam.js"
 
     ],
     "css": [

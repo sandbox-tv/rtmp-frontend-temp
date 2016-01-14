@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Record</title>
+  <link href="../dist/libs.css" rel="stylesheet">
+  <link href="../dist/app.css" rel="stylesheet">
+
+  <script src="../dist/libs.js"></script>
+  <script src="../dist/app.js"></script>
+</head>
+<body>
+  <div id="app">
+    <div id="webcam">
+    </div>
+
+    <button id="record">Record</button>
+  </div>
+
+  <script>
+  $('#webcam').webcam({
+      swfLocation: '../lib/jquery-flash-webcam/WebMedia.swf',
+      serverUrl: 'rtmp://192.168.59.103:1935/live',
+      videoName: 'test',
+      videoFps: 30,
+      videoQuality: 75,
+      keyFrameInterval: 4
+  });
+</script>
+</body>
+</html>
