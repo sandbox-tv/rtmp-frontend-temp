@@ -23,7 +23,12 @@
       videoName: 'test',
       videoFps: 30,
       videoQuality: 75,
-      keyFrameInterval: 4
+      keyFrameInterval: 2
+  });
+
+  $('#record').click(function() {
+    console.log('button clicked');
+    $.webcam.startRecording();
   });
 </script>
 </body>

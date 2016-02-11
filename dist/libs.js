@@ -167,17 +167,17 @@ var e=+b||0;if(Math.abs(e)===1/0&&(e=0),e>=d)return-1;for(var f=Math.max(e>=0?e:
 
         function populateObject(data) {
             var objectHtml = '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" \
-                                id="' + data.id + '" width="' + data.width + '" height="' + data.height + '" \
+                                id="' + data.id + '" \
                                 codebase="http://fpdownload.macromedia.com/get/flashplayer/current/swflash.cab">\
                                     <param name="movie" value="' + data.swfLocation + '" />\
-                                    <param name="quality" value="high" />\
+                                    <param name="quality" value="best" />\
                                     <param name="allowScriptAccess" value="always" />\
                                     <embed src="' + data.swfLocation + '" quality="high" bgcolor="#000000" \
                                         width="' + data.width + '" height="' + data.height + '" \
                                         name="webmediacapture" align="middle" \
                                         play="true" \
                                         loop="false" \
-                                        quality="high" \
+                                        quality="best" \
                                         allowScriptAccess="always" \
                                         type="application/x-shockwave-flash" \
                                         pluginspage="http://www.adobe.com/go/getflashplayer">\
